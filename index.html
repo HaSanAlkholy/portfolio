@@ -3,36 +3,464 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto+Mono:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio || Will be</title>
+    <link rel="stylesheet" href="./css/vendor/all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/vendor/aos.css" />
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./img/fire.png" />
+    <title>portfolio | HaSaN Alkholy - Front-End web develper</title>
   </head>
+
   <body>
-    <div id="particles-js"></div>
-    <section class="content">
-      <img class="img" src="./cable.jpg" alt="cable" />
-      <h1>Power Down</h1>
-      <p>
-        This Portfolio is under construction, Expect something awesome. <br />
-        Meanwhile you can check my github Account, I heard they have a new dark
-        mode
-      </p>
-      <a href="https://github.com/HaSanAlkholy" target="_blank"
-        ><img src="./github-logo.svg" alt="github" /> github</a
-      >
+    <div class="pre-loader">
+      <div class="content">
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
+        <span>Loading</span>
+      </div>
+    </div>
+
+    <nav>
+      <div class="c2">
+        <div class="nav-content">
+          <div class="nav-logo">
+            <a href="#">
+              <img src="../img/logo.png" alt="." />
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="particles-js"></div>
+      <div class="c2">
+        <div class="header-content">
+          <div class="header-title" data-aos="fade-up">
+            <h3><span>Hello.</span> i'm HaSan Alkholy</h3>
+            <div class="title-flex">
+              <h2 id="job">Front End Developer</h2>
+            </div>
+            <p>programmer and a javascript Developer</p>
+
+            <div class="btns">
+              <a href="#contact" class="hire-btn"> Say Hi </a>
+              <a href="./Hasan_Alkholy_Resume.pdf" class="cv-btn"> Get cv </a>
+            </div>
+          </div>
+          <div class="header-img scene" data-aos="fade-down">
+            <div class="img" data-depth="0.4">
+              <img
+                src="./img/header.svg"
+                alt="programmer"
+                class="filter-blue parallaxMoving"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="c2">
+        <div class="about-title s-head" data-aos="zoom-in">
+          <h2>About</h2>
+        </div>
+        <div class="about-body">
+          <div class="swiper-container-here">
+            <div class="skills swiper-wrapper-here">
+              <div class="skill swiper-slide-here">
+                <div class="skill-icon scene">
+                  <img
+                    data-depth="2"
+                    src="./img/about/design-thinking.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="skill-body" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Creative</h3>
+                  <p>
+                    I have tons of new ideas and i like every project i make to
+                    be unique.
+                  </p>
+                </div>
+              </div>
+              <div class="skill swiper-slide-here">
+                <div class="skill-icon scene">
+                  <img data-depth="2" src="./img/about/time.svg" alt="" />
+                </div>
+                <div class="skill-body" data-aos="fade-up" data-aos-delay="400">
+                  <h3>Up to date</h3>
+                  <p>
+                    Learning new technology and keeping my skills up to date is
+                    my heighst priority.
+                  </p>
+                </div>
+              </div>
+              <div class="skill swiper-slide-here">
+                <div class="skill-icon scene">
+                  <img data-depth="2" src="./img/about/rocket.svg" alt="" />
+                </div>
+                <div class="skill-body" data-aos="fade-up" data-aos-delay="700">
+                  <h3>Dynamic</h3>
+                  <p>
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </p>
+                </div>
+              </div>
+              <div class="skill swiper-slide-here">
+                <div class="skill-icon scene">
+                  <img
+                    data-depth="2"
+                    src="./img/about/responsive-website.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="skill-body"
+                  data-aos="fade-up"
+                  data-aos-delay="1000"
+                >
+                  <h3>Responsive</h3>
+                  <p>
+                    I care about Responsive layout and my work will always work
+                    on any screen size and on any browser
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="about-me">
+            <div class="introduction" data-aos="fade-right">
+              <h3>Who Am I ?</h3>
+              <p>
+                I'm a Front End Developer from Egypt. I have serious passion for
+                Javascript, animations and creating intuitive, dynamic user
+                experiences. <br />
+                <a href="#contact">Let's make something special.</a>
+              </p>
+            </div>
+
+            <div class="languages" data-aos="zoom-in">
+              <div class="lang lang1 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/html.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang2 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/css.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang3 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/javascript.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang1 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/nodejs.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang2 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/vue.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang3 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/jquery.svg" alt="HTML" />
+                </div>
+              </div>
+
+              <div class="lang lang1 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/sass-1.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang2 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/bootstrap-4.svg" alt="HTML" />
+                </div>
+              </div>
+              <div class="lang lang3 scene">
+                <div class="img" data-depth="0.7">
+                  <img src="./img/skills/react.svg" alt="HTML" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="./particles.js"></script>
-    <script>
-      particlesJS.load(
-        "particles-js",
-        "./particles.json",
-        function () {}
-      );
-    </script>
+    <section id="portfolio">
+      <div class="c2">
+        <div class="portfolio-title s-head" data-aos="zoom-in">
+          <h2>Projects</h2>
+        </div>
+        <div class="swiper-container-here">
+          <div class="projects swiper-wrapper-here">
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="0">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/ebony-house/index-en.html"
+                >
+                  <img src="./img/projects/1.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/ebony-house/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/HaSanAlkholy/ebony-house"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="400">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/qemat-al-tech/index-en.html"
+                >
+                  <img src="./img/projects/2.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/qemat-al-tech/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/HaSanAlkholy/qemat-al-tech"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/Wolf-coffee/index-en.html"
+                >
+                  <img src="./img/projects/3.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/Wolf-coffee/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/HaSanAlkholy/Wolf-coffee"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/toysFun/index-en.html"
+                >
+                  <img src="./img/projects/4.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/toysFun/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/HaSanAlkholy/toysFun"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="600">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/modernHomeLight/index-en.html"
+                >
+                  <img src="./img/projects/5.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/modernHomeLight/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/HaSanAlkholy/modernHomeLight"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+            <div class="project swiper-slide-here" data-aos="fade-up" data-aos-delay="400">
+              <div class="project-img">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/artna/index-en.html"
+                >
+                  <img src="./img/projects/6.jpg" alt="project" />
+                </a>
+              </div>
+              <div class="project-btns">
+                <a
+                  target="_blank"
+                  href="https://hasanalkholy.github.io/artna/index-en.html"
+                  ><i class="fas fa-globe"></i> Visit</a
+                >
+                <a target="_blank" href="https://github.com/HaSanAlkholy/artna"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="portfolio-end">
+        <div class="triangle"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="c2">
+        <div class="contact-title s-head">
+          <h2 data-aos="zoom-in-down">Contact</h2>
+          <p data-aos="fade-up">Have a question or want to work together?</p>
+        </div>
+        <div class="contact-body">
+          <form id="form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+            <button class="submit" type="submit" name="submit">Submit</button>
+          </form>
+          <p class="text-center email">gluturus22@gmail.com</p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="social">
+          <div class="facebook social-icon">
+            <span><i class="fab fa-twitter"></i></span>
+            <div class="corners">
+              <div class="up-right corner"></div>
+              <div class="up-left corner"></div>
+              <div class="bottom-right corner"></div>
+              <div class="bottom-left corner"></div>
+            </div>
+            <a href="https://twitter.com/HassanAlkholy1" target="_blank"></a>
+          </div>
+          <div class="linkedin social-icon">
+            <span><i class="fab fa-linkedin-in"></i></span>
+            <div class="corners">
+              <div class="up-right corner"></div>
+              <div class="up-left corner"></div>
+              <div class="bottom-right corner"></div>
+              <div class="bottom-left corner"></div>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/hasan-alkholy-2a276213b/"
+              target="_blank"
+            ></a>
+          </div>
+          <div class="github social-icon">
+            <span><i class="fab fa-github"></i></span>
+            <div class="corners">
+              <div class="up-right corner"></div>
+              <div class="up-left corner"></div>
+              <div class="bottom-right corner"></div>
+              <div class="bottom-left corner"></div>
+            </div>
+            <a href="https://github.com/HaSanAlkholy" target="_blank"></a>
+          </div>
+        </div>
+        <div class="signature">
+          <p><span>Hasan Alkholy </span> &copy; 2021</p>
+        </div>
+      </footer>
+    </section>
+
+    <div
+      id="up"
+      class="up flex-center"
+      onclick="window.scroll({top: 0,behavior: 'smooth'});"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/vendor/jquery-3.5.0.min.js"></script>
+    <script src="./js/vendor/particles.js"></script>
+    <script src="./js/vendor/typed.js"></script>
+    <script src="./js/vendor/parallax.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
