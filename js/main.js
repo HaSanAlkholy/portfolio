@@ -36,41 +36,20 @@ $(window).on("load", function () {
     function () {}
   );
 
+  function duplicateArray(array, count=2) {
+    return Array(count).fill(array).flat();
+  }
+
+  let typed_strings = [
+    "Software Engineer",
+    "Front-End Developer",
+    "Python Developer",
+    "Javascript Developer",
+  ]
+
   // typed
   var typed = new Typed("#job", {
-    strings: [
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-      "UI Developer",
-      "Javascript Developer",
-      "Front-End Developer",
-    ],
+    strings: duplicateArray(typed_strings, 50),
     typeSpeed: 40,
     backSpeed: 25,
     startDelay: 1500,
@@ -80,9 +59,9 @@ $(window).on("load", function () {
 
   //parallax
 
-  var scene = document.querySelectorAll(".scene");
-  scene.forEach((e) => {
-    var parallaxInstance = new Parallax(e, {
+  var scenes = document.querySelectorAll(".scene");
+  scenes.forEach((e) => {
+    new Parallax(e, {
       relativeInput: true,
       clipRelativeInput: true,
     });
